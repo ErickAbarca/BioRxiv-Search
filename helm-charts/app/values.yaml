@@ -1,0 +1,19 @@
+config:
+  docker_registry: eriabark
+  job:
+    enabled: true
+    name: spark-job
+    image: eriabark/sparkjob
+    schedule: "0 * * * *"
+  see:
+    enabled: true
+    name: see
+    image: eriabark/see
+  api:
+    enabled: true
+    name: api-crawler
+    image: eriabark/api-crawler
+  controller:
+    enable: true
+    name: controller
+    image: eriabark/controller

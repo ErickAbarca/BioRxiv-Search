@@ -1,0 +1,6 @@
+rabbitmq:
+  enabled: true
+  platform: linux/arm64
+  auth:
+    username: "user"
+    password: "1234"

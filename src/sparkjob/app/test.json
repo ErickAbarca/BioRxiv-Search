@@ -1,0 +1,200 @@
+[
+  {
+    "rel_authors": [
+      {
+        "author_name": "Juan Carlos Pérez",
+        "author_inst": "Universidad Nacional, Instituto de Investigación"
+      },
+      {
+        "author_name": "María Elena García",
+        "author_inst": "MIT, Harvard Medical School"
+      }
+    ],
+    "rel_date": "2023-12-15",
+    "rel_abs": "This study presents a comprehensive analysis of machine learning algorithms applied to biomedical data processing. The research demonstrates significant improvements in accuracy and efficiency when processing large datasets. Keywords: machine learning, biomedical, data processing, algorithms.",
+    "rel_link": "https://example.com/articles/ml-biomedical-2023",
+    "rel_title": "Machine Learning Applications in Biomedical Data Processing",
+    "rel_doi": "10.1000/ml-biomed-2023-001",
+    "category": "computer science",
+    "type": "research article"
+  },
+  {
+    "rel_authors": [
+      {
+        "author_name": "Dr. Ana Sofía Rodríguez",
+        "author_inst": "Stanford University"
+      },
+      {
+        "author_name": "Carlos Alberto Mendez",
+        "author_inst": "Universidad de Barcelona, CSIC"
+      },
+      {
+        "author_name": "Elena Fernández López",
+        "author_inst": "Oxford University, Imperial College London"
+      }
+    ],
+    "rel_date": "'2024-01-20'",
+    "rel_abs": "Climate change impacts on marine ecosystems have been extensively studied. This paper reviews current methodologies for assessing biodiversity loss in coral reefs. The study includes data from multiple geographic locations and temporal scales. Marine biology, climate change, coral reefs, biodiversity assessment.",
+    "rel_link": "https://example.com/marine-climate-study-2024",
+    "rel_title": "Climate Change Effects on Marine Biodiversity: A Global Assessment",
+    "rel_doi": "10.1000/marine-climate-2024-002",
+    "category": "environmental science",
+    "type": "review paper"
+  },
+  {
+    "rel_authors": [
+      {
+        "author_name": "Robert Johnson",
+        "author_inst": "California Institute of Technology"
+      }
+    ],
+    "rel_date": "2023-11-08",
+    "rel_abs": "Quantum computing represents a paradigm shift in computational capabilities. This paper explores quantum algorithms for optimization problems in logistics and supply chain management. Results show promising applications for real-world scenarios. Quantum computing, optimization, logistics, supply chain.",
+    "rel_link": "https://example.com/quantum-logistics-2023",
+    "rel_title": "Quantum Algorithms for Supply Chain Optimization",
+    "rel_doi": "10.1000/quantum-opt-2023-003",
+    "category": "physics",
+    "type": "research article"
+  },
+  {
+    "rel_authors": [
+      {
+        "author_name": "Lisa Wang",
+        "author_inst": "Beijing University, Tsinghua University"
+      },
+      {
+        "author_name": "Michael Chen",
+        "author_inst": "University of Tokyo"
+      }
+    ],
+    "rel_date": "2024-02-14",
+    "rel_abs": "Artificial intelligence in medical diagnosis has shown remarkable progress. This comprehensive review examines AI applications in radiology, pathology, and clinical decision support systems. The paper discusses challenges, opportunities, and future directions. Artificial intelligence, medical diagnosis, radiology, pathology, clinical decision support.",
+    "rel_link": "https://example.com/ai-medical-diagnosis-2024",
+    "rel_title": "AI-Powered Medical Diagnosis: Current State and Future Prospects",
+    "rel_doi": "10.1000/ai-medical-2024-004",
+    "category": "medicine",
+    "type": "review paper"
+  },
+  {
+    "rel_authors": [
+      {
+        "author_name": "Ahmed Hassan",
+        "author_inst": "Cairo University, American University in Cairo"
+      },
+      {
+        "author_name": "Sarah Thompson",
+        "author_inst": "University of Cambridge"
+      },
+      {
+        "author_name": "Pierre Dubois",
+        "author_inst": "Sorbonne University, CNRS"
+      }
+    ],
+    "rel_date": "2023-09-30",
+    "rel_abs": "Renewable energy integration poses significant challenges for power grid stability. This study proposes novel control strategies for managing distributed energy resources. The research includes simulation results and real-world implementation scenarios. Renewable energy, power grid, distributed energy resources, control systems.",
+    "rel_link": "https://example.com/renewable-grid-2023",
+    "rel_title": "Smart Grid Integration of Renewable Energy Sources",
+    "rel_doi": "10.1000/renewable-grid-2023-005",
+    "category": "engineering",
+    "type": "research article"
+  },
+  {
+    "rel_authors": [
+      {
+        "author_name": "Dr. Jennifer Martinez",
+        "author_inst": "Universidad Autónoma de Madrid"
+      }
+    ],
+    "rel_date": "2024-03-05",
+    "rel_abs": "Social media impact on mental health among adolescents requires careful examination. This longitudinal study analyzes data from 5000 participants over 3 years. Findings reveal correlations between social media usage patterns and psychological well-being indicators. Social media, mental health, adolescents, longitudinal study, psychological well-being.",
+    "rel_link": "https://example.com/social-media-mental-health-2024",
+    "rel_title": "Social Media Usage and Adolescent Mental Health: A Longitudinal Analysis",
+    "rel_doi": "10.1000/social-mental-2024-006",
+    "category": "psychology",
+    "type": "research article"
+  },
+  {
+    "rel_authors": [
+      {
+        "author_name": "Raj Patel",
+        "author_inst": "Indian Institute of Technology"
+      },
+      {
+        "author_name": "Emma Wilson",
+        "author_inst": "University of Edinburgh, Imperial College London"
+      },
+      {
+        "author_name": "Marco Rossi",
+        "author_inst": "Università di Roma La Sapienza"
+      }
+    ],
+    "rel_date": "2023-10-12",
+    "rel_abs": "Blockchain technology applications extend beyond cryptocurrency into supply chain management, healthcare, and governance. This paper provides a systematic review of blockchain implementations across various sectors. The analysis covers technical challenges, scalability issues, and adoption barriers. Blockchain, cryptocurrency, supply chain, healthcare, governance, scalability.",
+    "rel_link": "https://example.com/blockchain-applications-2023",
+    "rel_title": "Blockchain Technology: Applications Beyond Cryptocurrency",
+    "rel_doi": "10.1000/blockchain-apps-2023-007",
+    "category": "computer science",
+    "type": "systematic review"
+  },
+  {
+    "rel_authors": [
+      {
+        "author_name": "Dr. Yuki Tanaka",
+        "author_inst": "University of Tokyo, RIKEN"
+      },
+      {
+        "author_name": "Hans Mueller",
+        "author_inst": "Max Planck Institute"
+      }
+    ],
+    "rel_date": "2024-01-18",
+    "rel_abs": "Nanotechnology in drug delivery systems offers unprecedented precision in therapeutic applications. This research presents novel nanocarrier designs for targeted cancer therapy. In vitro and in vivo studies demonstrate improved efficacy and reduced side effects. Nanotechnology, drug delivery, nanocarriers, cancer therapy, targeted therapy.",
+    "rel_link": "https://example.com/nano-drug-delivery-2024",
+    "rel_title": "Advanced Nanocarriers for Targeted Cancer Therapy",
+    "rel_doi": "10.1000/nano-cancer-2024-008",
+    "category": "biotechnology",
+    "type": "research article"
+  },
+  {
+    "rel_authors": [
+      {
+        "author_name": "David Brown",
+        "author_inst": "MIT, Boston University"
+      },
+      {
+        "author_name": "Sophie Dubois",
+        "author_inst": "École Polytechnique"
+      }
+    ],
+    "rel_date": "2023-08-22",
+    "rel_abs": "Urban planning in the 21st century must address sustainability, population growth, and technological integration. This study examines smart city initiatives across 50 metropolitan areas worldwide. The research identifies best practices and common challenges in urban development. Urban planning, smart cities, sustainability, population growth, metropolitan development.",
+    "rel_link": "https://example.com/urban-planning-smart-cities-2023",
+    "rel_title": "Smart City Development: Global Trends and Best Practices",
+    "rel_doi": "10.1000/urban-smart-2023-009",
+    "category": "urban studies",
+    "type": "comparative study"
+  },
+  {
+    "rel_authors": [
+      {
+        "author_name": "Dr. Fatima Al-Zahra",
+        "author_inst": "King Abdullah University of Science and Technology"
+      },
+      {
+        "author_name": "James Robertson",
+        "author_inst": "University of Sydney"
+      },
+      {
+        "author_name": "Anna Kowalski",
+        "author_inst": "University of Warsaw, Polish Academy of Sciences"
+      }
+    ],
+    "rel_date": "2024-04-10",
+    "rel_abs": "Space exploration technologies continue to advance with implications for future Mars colonization. This paper reviews current propulsion systems, life support technologies, and habitat designs for long-duration space missions. The analysis includes cost-benefit assessments and timeline projections. Space exploration, Mars colonization, propulsion systems, life support, habitat design.",
+    "rel_link": "https://example.com/mars-colonization-tech-2024",
+    "rel_title": "Technologies for Mars Colonization: Current State and Future Requirements",
+    "rel_doi": "10.1000/mars-tech-2024-010",
+    "category": "aerospace engineering",
+    "type": "review paper"
+  }
+]

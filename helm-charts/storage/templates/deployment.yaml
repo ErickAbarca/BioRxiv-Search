@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}-deployment
+  namespace: {{ .Release.Namespace }}
+spec:
+  replicas: {{ .Values.replicaCount | default 0 }}
+  selector:
+    matchLabels:
+      app: {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Release.Name }}
+    spec:
+      containers:
+      - name: {{ .Release.Name }}-container
+        image: {{ .Values.image.repository }}:{{ .Values.image.tag | default "latest" }}
+        command: ["/bin/sh", "-c", "while true; do sleep 3600; done"]
+        volumeMounts:
+        - name: shared-pvc-volume
+          mountPath: {{ .Values.mountPath | default "/data" }}
+      volumes:
+      - name: shared-pvc-volume
+        persistentVolumeClaim:
+          claimName: shared-pvc

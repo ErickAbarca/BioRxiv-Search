@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.config.controller.name }}
+  labels:
+    app: {{ .Values.config.controller.name }}
+spec:
+  selector:
+    matchLabels:
+      app: {{ .Values.config.controller.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.config.controller.name }}
+    spec:
+      containers:
+      - name: {{ .Values.config.controller.name }}
+        image: {{ .Values.config.controller.image }}
+        ports:
+          - containerPort: 5000
+        env:
+        - name: RABBITMQ
+          value: "databases-rabbitmq"
+        - name: RABBITMQ_QUEUE
+          value: "queue"
+        - name: RABBITMQ_USER
+          value: "user"
+        - name: XPATH
+          value: "/data"
+        - name: RABBITMQ_PASS
+          valueFrom:
+            secretKeyRef:
+              name: databases-rabbitmq
+              key: rabbitmq-password
+              optional: false
+        - name: MONGO_STR
+          value: "mongodb+srv://jesusdavidvalverde:1234@proyecto.qts9eg7.mongodb.net/?retryWrites=true&w=majority&appName=Proyecto"
+        - name: URL_BIO
+          value: "https://api.biorxiv.org/covid19/0"
+
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: controller
+spec:
+  ports:
+    - name: controller
+      port: 5000
+      targetPort: 5000
+  selector:
+    app: {{ .Values.config.controller.name }}

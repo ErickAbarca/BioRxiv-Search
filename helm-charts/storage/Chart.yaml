@@ -1,0 +1,4 @@
+apiVersion: v2
+name: storage
+description: shared-volume
+version: 0.0.1

@@ -1,0 +1,44 @@
+### LOCAL
+### Registro
+POST http://localhost:3000/api/users/register
+Content-Type: application/json
+
+{
+  "email": "persona@correo.com",
+  "password": "123456"
+}
+### Login
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+  "email": "persona@correo.com",
+  "password": "123456"
+}
+### Buscar
+GET http://localhost:3000/api/search?q=Costa Rica
+x-api-key: 8CB519918D3F47B334FF041D5CBE30C8
+
+
+
+### API VERCEL
+### Registro
+POST https://2025-01-ic-4302-eight.vercel.app/api/users/register
+Content-Type: application/json
+
+{
+  "email": "prueba@gmail.com",
+  "password": "123456"
+}
+### Login
+POST https://2025-01-ic-4302-eight.vercel.app/api/users/login
+Content-Type: application/json
+
+{
+  "email": "prueba@gmail.com",
+  "password": "123456"
+}
+### Buscar
+GET https://2025-01-ic-4302-eight.vercel.app/api/search?q=40000
+x-api-key: 8CB519918D3F47B334FF041D5CBE30C8
+

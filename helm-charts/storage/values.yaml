@@ -1,0 +1,7 @@
+storage: 1Gi
+hostPath: /run/desktop/mnt/hosthome/k8s-data/shared
+replicaCount: 0 
+image:
+  repository: busybox
+  tag: latest
+mountPath: /data

@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.config.see.name }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Values.config.see.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.config.see.name }}
+    spec:
+      containers:
+      - name: {{ .Values.config.see.name }}
+        image: {{ .Values.config.see.image }}
+        ports:
+        - containerPort: 3000
+        env:
+        - name: RABBITMQ
+          value: "databases-rabbitmq"
+        - name: RABBITMQ_QUEUE
+          value: "downloaded"
+        - name: RABBITMQ_USER
+          value: "user"
+        - name: XPATH
+          value: "/data"
+        - name: RABBITMQ_PASS
+          valueFrom:
+            secretKeyRef:
+              name: databases-rabbitmq
+              key: rabbitmq-password
+              optional: false
+        - name: INPUT_DIR
+          value: "/mnt/shared/raw"
+        - name: OUTPUT_DIR
+          value: "/mnt/shared/augmented"
+        volumeMounts:
+        - name: shared-storage
+          mountPath: /mnt/shared
+      volumes:
+      - name: shared-storage
+        persistentVolumeClaim:
+          claimName: shared-pvc

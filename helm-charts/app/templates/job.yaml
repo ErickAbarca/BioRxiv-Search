@@ -1,0 +1,32 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{ .Values.config.job.name }}
+  labels:
+    app: {{ .Values.config.job.name }}
+spec:
+  schedule: "10 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          labels:
+            app: {{ .Values.config.job.name }}
+        spec:
+          restartPolicy: OnFailure
+          containers:
+          - name: {{ .Values.config.job.name }}
+            image: {{ .Values.config.job.image }}
+            imagePullPolicy: IfNotPresent
+            env:
+            - name: MONGO_STR
+              value: "mongodb+srv://jesusdavidvalverde:1234@proyecto.qts9eg7.mongodb.net/?retryWrites=true&w=majority&appName=Proyecto"
+            - name: INPUT_DIR
+              value: "/mnt/shared/augmented"
+            volumeMounts:
+            - name: shared-storage
+              mountPath: /mnt/shared
+          volumes:
+          - name: shared-storage
+            persistentVolumeClaim:
+              claimName: shared-pvc
